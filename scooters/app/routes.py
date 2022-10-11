@@ -1,6 +1,7 @@
 from aiohttp import web
 
 from app.api.v1 import get_scooters
+
 from app.api.v1 import send_command
 from app.context import AppContext
 

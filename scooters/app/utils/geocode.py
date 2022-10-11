@@ -1,7 +1,5 @@
 import typing as tp
-import functools
 
-from async_lru import alru_cache
 import aiohttp
 
 from app import dto
@@ -23,7 +21,6 @@ class GeocoderClient:
     async def on_shutdown(self) -> None:
         await self._session.close()
 
-    @alru_cache
     async def get_address(self, location: dto.Location) -> tp.Optional[str]:
         async with self._session.get(
             '/1.x/',
