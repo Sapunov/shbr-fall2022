@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "scooters"
+version = "0.1.0"
+description = ""
+authors = ["Nikita Sapunov <sapunovnik@yandex-team.ru>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+aiohttp = "^3.8.3"
+asyncpg = "^0.26.0"
+async-lru = "^1.0.3"
+pydantic = "^1.10.2"
+
+[tool.poetry.dev-dependencies]
+black = "^22.10.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
